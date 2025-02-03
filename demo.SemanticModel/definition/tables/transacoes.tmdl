@@ -1,6 +1,14 @@
 table transacoes
 	lineageTag: 98b4b385-343c-45e6-8a2f-67d69985afbc
 
+	measure 'Valor Total' = ```
+			SUM(transacoes[Total])
+			
+			```
+		lineageTag: 6a444e4b-84b6-4e51-838d-b26c80868421
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column ID
 		dataType: double
 		lineageTag: bc93b5bd-6d0d-461a-a982-9bd604cf31dd
