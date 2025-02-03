@@ -1,6 +1,11 @@
 table cotacoes
 	lineageTag: 0d10978f-d75b-4e70-af2a-0f3a4b95dabe
 
+	measure 'Cotação do dia' = AVERAGE(cotacoes[Cotacao])
+		lineageTag: 549839ad-c831-4b51-a333-93079ef1f016
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Moeda
 		dataType: string
 		lineageTag: c7404c7a-a22f-4376-953a-a46bd22a149a
